@@ -1,0 +1,25 @@
+﻿<h1>Burasu sample view'ı'</h1>
+<br /><br />
+@*Html.Partial("_SamplePartial")*@
+<partial name="_SamplePartial"/>
+<br/>
+<br/>
+
+<partial name="PartialViews/_OrnekPartial">
+
+<br />
+<br />
+
+    @{
+        string ad = "Bilge adam";
+    }
+
+<partial name ="_DataPartial" model="ad" >
+ <br />
+ <br />
+
+
+
+        @section footerSection{
+            <p>Tüm hakları saklıdır.Bu sayfada kullanılan içerikler yazarlarına aittir.</p>
+        }
